@@ -91,31 +91,6 @@ docker build -t x-ui .
 - 证书安装目录为/root/cert目录
 - 本脚本申请证书均为泛域名证书
 
-## Tg机器人使用（开发中，暂不可使用）
-
-> 此功能与教程由[FranzKafkaYu](https://github.com/FranzKafkaYu)提供
-
-X-UI支持通过Tg机器人实现每日流量通知，面板登录提醒等功能，使用Tg机器人，需要自行申请
-具体申请教程可以参考[博客链接](https://coderfan.net/how-to-use-telegram-bot-to-alarm-you-when-someone-login-into-your-vps.html)
-使用说明:在面板后台设置机器人相关参数，具体包括
-
-- Tg机器人Token
-- Tg机器人ChatId
-- Tg机器人周期运行时间，采用crontab语法  
-
-参考语法：
-- 30 * * * * * //每一分的第30s进行通知
-- @hourly      //每小时通知
-- @daily       //每天通知（凌晨零点整）
-- @every 8h    //每8小时通知  
-
-TG通知内容：
-- 节点流量使用
-- 面板登录提醒
-- 节点到期提醒
-- 流量预警提醒  
-
-更多功能规划中...
 ## 建议系统
 
 - CentOS 7+
@@ -134,10 +109,4 @@ TG通知内容：
 x-ui v2-ui
 ```
 
-## issue 关闭
 
-各种小白问题看得血压很高
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/vaxilu/x-ui.svg)](https://starchart.cc/vaxilu/x-ui)
